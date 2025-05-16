@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Overflow Property</title>
+    <style>
+        .box{
+            width: 40vw;
+            height: 10vw;
+            border: 2px solid black;
+            overflow: auto;
+            /* overflow has many function : 
+                ~ auto - if it has more then automatic add scroll
+                ~ scroll - for scroll
+                ~ hidden - 
+            */
+            white-space: nowrap; /* for only horizantally scroll not in vertical */
+            
+            /* text-overflow: ellipsis; for dotted */
+        }
+    </style>
+</head>
+<body>
+    <div class="box">I am a good boy and I love to write Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nemo aspernatur similique, officia labore repellat commodi! Rem, magni eius, quae impedit aspernatur officiis culpa necessitatibus consequatur voluptate repellat cupiditate? Sint, temporibus!</div>
+</body>
+</html>

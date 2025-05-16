@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Styling Lists using CSS</title>
+    <style>
+        nav > ul > li{
+            /*list-style-type: devanagari; /* used to change the style of numbering */
+            background-color: yellow;
+            color: red;
+            /* by this the marker or numbering not included in background color 
+            for including we use list-style-position : inside */
+            list-style-position: inside;
+            list-style-type: "😊"; /* we can use emoji instead of numbers */
+            /* list-style-image: URL; also we use image */
+            /* for horizontal of li */
+            list-style: none;
+            padding: 30px;
+        }
+        ul{
+            display: flex;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li>Home</li>
+            <li>About</li>
+            <li>Contact</li>
+        </ul>
+    </nav>
+</body>
+</html>

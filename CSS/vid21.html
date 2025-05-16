@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Specificity & Cascade</title>
+    <style>
+        /* for choosing which css will apply is based on Cascade Algorithm : 
+        It has 4 distinct stages: 
+            1.Position and Order of Appearance - the order in which your css rules appear(means in which order it is written for same type like class selector or id selector)
+
+            2.Specificity - that determines which CSS selector has the strongest match
+            Priority = ( Inline Style > ID Selector > Class or Attribute Selector > Element Selector > Universal Selector )
+
+            3.Origin - the order in which CSS appears and where it comes from whether that is a browser style 
+
+            4.Importance - some CSS rules are weighted more heavily than others, especially with the | important rule type
+            By points :
+                1. Universal Selector - 0
+                2. Element Selector and Pseudo-Elements - 1
+                3. Class Selector, Attribute Selector and Pseudo-Classes - 10
+                4. ID Selector - 100
+                5. Inline Style - 1000
+        */
+        /* The specifity of this selector is 1 */
+        h1{
+            color: aqua;
+        }
+
+        /* The specifity of this selector is 10 */
+        .yellow{
+            color: yellow;
+        }
+
+        /* The specifity of this selector is 10 */
+        .cred{
+            color: red;
+        }
+
+        /* The specifity of this selector is 10 */
+        .cpurple{
+            color: purple;
+        }
+
+        /* This is an example of attribute selector.The specifity of this selector is 10 */
+        /* [data-x=a]{
+            background-color: maroon;
+        } */
+
+        /* The specificity of this selector is 1(element) + 10(harryclass) + 10(rohanclass) + 10(attribute) + 10(pseudo-class) = 41 */
+        a.harryclass.rohan-class[href]:hover{
+            color:blueviolet;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <h1 class="yellow cred cpurple" data-x="a">CSS Specificity</h1>
+    </div>
+</body>
+</html>

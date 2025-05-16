@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Selectors Masterclass</title>
+    <style>
+        /* Element Selector 
+        div{
+            background-color: red;
+        } 
+        */
+
+        /* Class Selector */
+        .red{
+            background-color: yellow;
+        }
+
+        /* Id Selector */
+        #green{
+            background-color: aqua;
+        }
+
+        /* Child Selector - direct child */
+        div > p{
+            color:rgb(104, 104, 12);
+            background-color: rgb(247, 247, 247);
+        }
+
+        /* Descendent Selector */
+        div p{
+            color:rgb(74, 74, 55);
+            background-color: rgb(186, 159, 159);
+        }
+
+        /* Universal Selector */
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        
+        /* Attribute Selector */
+        [data-x=a]{
+            background-color: pink;
+        }
+
+        /* Pseudo Selector */
+        a:visited{
+            color:darkgreen;
+        }
+
+        a:link{
+            color: crimson;
+        }
+
+        a:active{
+            background-color: red;
+        }
+
+        a:hover{
+            background-color: yellow;
+        }
+
+        p:first-child{
+            background-color: rgb(208, 208, 160);
+        }
+    </style>
+</head>
+<body>
+    <h1 data-x="a">Attribute selector</h1>
+    <main class="one">
+        <p>I'm first</p>
+        <p>I'm second</p>
+    </main>
+    <div class="red">
+        Myself Ritesh
+        <p>currently persuing B.tech in CV Raman</p>
+    </div>
+    <div id="green">
+        From Bihar
+        <span>
+            <p>There paragraph not direct child to div</p>
+        </span>
+    </div>
+    <a href="https://www.google.com">Go to Google</a>
+    <a href="https://www.facebook.com">Go to Facebook</a>
+</body>
+</html>

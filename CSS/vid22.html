@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Sizing Units</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+
+        html{
+            font-size: 12px;
+        }
+
+        .box{
+            box-sizing: border-box;
+            border: 2px solid black;
+            /*width: 200px;*/
+            width: 40vw; /* viewport width */
+            margin: auto; /* same margin from both side only works in block level element not in inline element */
+            background-color: aqua;
+        }
+
+        .container{
+            box-sizing: border-box;
+            border: 3px solid black;
+            width: 70vw;
+            /*height: 80vh; /* viewport height */
+            margin: 23px auto; /*here 23px for top bottom margin and auto for left right */
+            min-height: 80vh; /* min-height = 80vh means it will maintain always 80vh height even it has not sufficient element to full the container, but if we add more element then it will expand the container automatically AND this how min-width works also */
+            font-size: 18px;
+            background-color: red;
+        }
+
+        .container > p{
+            /* font-size: 2em; /* em means the multiple of inherited pixel from container font. eg - 18px in container and 2em in container p, then the font size will be 18 x 2 = 36px */ 
+            font-size: 2rem; /* multiple of root pixel i.e. html */
+        }
+
+        .mycont{
+            box-sizing: border-box;
+            border: 3px solid black;
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+            margin: 23px auto;
+            /* vmin means which is smaller in device either height or width - eg: in PC vmin is height and in Mobile vmin is width , 
+            vmax means which is greater */
+            /* width: 100vmin; */
+            width: 80vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        This is a box
+    </div>
+    <div class="container">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit molestiae nemo voluptatem maiores, saepe ipsa. Voluptatum esse dolorum ea, pariatur unde fuga quam eligendi error?
+        </p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Harum nisi, aperiam at tempora, officia veniam ipsa magnam sit numquam iure minima eos consequatur ea eum atque itaque in ex ipsum est laborum suscipit fugiat? Ullam dolore expedita sapiente assumenda inventore? Labore eos animi vero hic, voluptatibus provident dicta ipsam, cupiditate officiis quas, reprehenderit distinctio pariatur corporis in eius nihil. Officiis dolores temporibus, aliquam iusto amet, dolorem ullam accusantium vel aut maxime voluptate doloribus ab architecto labore explicabo, laudantium praesentium error impedit. Magni iusto molestiae vel? Modi unde tenetur deserunt quam. Reprehenderit in itaque soluta non, sed velit rem! Ullam saepe vitae pariatur at distinctio corporis veritatis provident in cumque quasi temporibus fugiat placeat, alias soluta, tempora odit quod, consequuntur iusto veniam quos excepturi asperiores exercitationem. Tempore pariatur reprehenderit debitis dicta, iste quisquam a, fuga illo et maiores quas sint magni expedita quasi natus quidem. Aliquid eos nemo molestiae, tempora perferendis ducimus, id ex temporibus perspiciatis hic voluptatum explicabo suscipit itaque? Perspiciatis dolorum unde quaerat inventore vero, in accusantium consectetur. Deserunt officia, numquam totam doloribus deleniti tempora? Nesciunt, ad! Velit dicta nobis unde vero quisquam, consequatur nesciunt in quos libero pariatur, dolores saepe neque cupiditate nostrum ratione impedit, quidem error voluptatem beatae consectetur earum fuga reprehenderit? Beatae eos vero, animi earum consectetur pariatur dolore ab perspiciatis debitis officia eligendi saepe! Dolor odio assumenda, corporis reprehenderit tempora amet dignissimos dolorum odit? Quae laborum soluta magni deleniti dolorem odio non quaerat harum veritatis excepturi ullam reiciendis, nulla repellat consequatur laboriosam porro odit vel. Ducimus, est ut consequuntur officiis fugiat nostrum. Officiis laudantium praesentium molestiae, debitis eveniet commodi itaque ipsa quia magni repellat quod ipsum, non animi quidem! Ea, sint vero accusamus quis saepe corrupti corporis, dolores minus optio modi eos incidunt. Id fuga eveniet quod porro labore beatae enim numquam dolores minima amet.
+    </div>
+    <div class="mycont">
+        I am another container 
+    </div>
+</body>
+</html>
