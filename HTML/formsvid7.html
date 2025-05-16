@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms - Lets learn it</title>
+</head>
+<body>
+    <!--get reuquest for simple and post request for more data-->
+    <h1>Form to apply Sigma Web Development Course</h1>
+    <form action="post">
+        <div>    
+            <label for="username">Enter your username</label>
+            <input type="text" id="username" placeholder="Enter your username">
+        </div>
+        <div><br>
+            <!--input type = text for writing name ,etc  &&  input type = radio for selecting like tick mark-->
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+            <!--if we use same name in input then we select only one option at a time-->
+        </div>
+        <div><br>
+            <!--select tag for selection from dome option-->
+            <!--option tag for giving options-->
+            <select name="State">
+                <option value="Bihar">Bihar</option>
+                <option value="Odisha">Odisha</option>
+                <option value="Jharkhand">Jharkhand</option>
+                <option value="Uttrakhand">Uttrakhand</option>
+            </select>
+            <div><br>
+                <input type="checkbox" name="Agree and Continue" id="Agree" value="yes">
+                <label for="Agree">Agree and Continue</label>
+            </div>
+        </div>
+        <div>br
+            <!--textarea tag uses for getting comment area or like feedback area-->
+            <label for="comment">Feedback of this website...</label> <br>
+            <textarea name="comment" rows="4" cols="36"></textarea>
+        </div>
+    </form>
+</body>
+</html>

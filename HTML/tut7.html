@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Table Creation</title>
+    <link rel="stylesheet" href="hello.css">
+</head>
+<body>
+    <h1>Details using HTML</h1>
+    <hr>
+    <caption>Student details</caption>
+    <table>
+        <thead>
+            <tr>  <!--table row-->
+                <th>Name</th>    <!--table heading-->
+                <th>Occupation</th>
+                <th>Language</th>
+            </tr>
+        </thead>
+        <tbody>    
+            <tr>
+                <td>Ritesh</td>   <!--table data-->
+                <td rowspan="2">Student</td>
+                <td>English</td>
+            </tr>
+
+            <tr>
+                <td>Sam</td>
+                <td>Hin-Footer</td>
+            </tr>
+        </tbody>    
+<!--For merging column we use colspan="2" and for row we use rowspan="2"-->
+        <tfoot>
+            <tr>
+                <td colspan="2">Sam</td>
+                <td>Hin-Footer</td>
+            </tr>
+        </tfoot>    
+    </table>
+
+
+    <ul type="square">  <!--unordered list also we use type attributes like square, circle-->
+        <li>RITESH</li>
+        <LI>SAURAV</LI>
+        <LI>ROSHNI</LI>
+    </ul>
+
+    <ol type="a">  <!--ordered list and type attributes like I.i,1,a,A-->
+        <li>RITESH</li>
+        <LI>SAURAV</LI>
+        <LI>ROSHNI</LI>
+    </ol>
+
+    <dl>  <!--definition list-->
+        <dt>HTML :</dt>  <!--definition term-->
+        <dd>HTML (HyperText Markup Language) is the standard language used to create and structure the content on web pages, such as text, images, links, and other multimedia elements. It uses a system of tags and attributes to define the structure and presentation of information.</dd>  <!--definition definition-->
+
+        <dt>CSS :</dt>
+        <dd>CSS (Cascading Style Sheets) is a stylesheet language used to control the presentation and layout of HTML elements, including colors, fonts, spacing, and positioning. It allows for the separation of content (HTML) and design, enabling more flexible and consistent web designs.</dd>
+
+        <dt>JavaScript :</dt>
+        <dd>JavaScript is a versatile programming language used to create dynamic and interactive features on web pages, such as animations, form validation, and real-time updates. It runs in the browser and works alongside HTML and CSS to enhance user experiences.</dd>
+    </dl>
+</body>
+</html>

@@ -1,0 +1,45 @@
+body{
+    background-color: rgb(198, 224, 224);
+}
+h1{
+    background-color: rgb(210, 187, 187);
+}
+td{
+    border: 3px solid black;
+}
+
+dd{
+    border: 2px solid ;
+}
+
+/*inline and block element*/
+p{
+    background-color: aquamarine;
+}
+a{
+    background-color: rgb(108, 192, 192);
+}
+div{
+    background-color: rgb(237, 183, 183);
+}
+span{
+    background-color: violet;
+}
+
+/*id and classes*/
+/*target class in css using dot(.) and id uding hash(#) */
+.red{ /*.red means red class */
+    color: rgb(163, 15, 47);
+}
+
+.white{
+    background-color: chartreuse;
+}
+
+#seconddiv{ /* #firstdiv means id */
+    color: rgb(21, 0, 255);
+}
+
+.bg-yellow{
+    background-color: yellow;
+}
